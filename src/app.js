@@ -23,7 +23,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:3000 , https://code-crew-frontend-seven.vercel.app/",
+  origin: ["http://localhost:3000", "https://code-crew-frontend-seven.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
