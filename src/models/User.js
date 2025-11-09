@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const { sequelize } = require('../config/db'); // Fixed path
+const { sequelize } = require('../config/db');
 const bcrypt = require('bcryptjs');
 
 const User = sequelize.define('User', {
@@ -30,7 +30,7 @@ const User = sequelize.define('User', {
   },
   profilePhoto: {
     type: DataTypes.STRING,
-    defaultValue: 'default-avatar.png'
+    defaultValue: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-vector%2Fman-character_665280-46970.jpg&f=1&nofb=1&ipt=491967750a78da1e328e6e97890424ae046a91cfafb269883173a558dbeebd79'
   },
   bio: {
     type: DataTypes.TEXT,
